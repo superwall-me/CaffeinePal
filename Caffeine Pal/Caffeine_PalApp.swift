@@ -14,11 +14,14 @@ struct Caffeine_PalApp: App {
     @State private var store: CaffeineStore = .init()
     @State private var purchases: PurchaseOperations = .init()
     
+    init() {
+        Superwall.configure(apiKey: "api_key")
+    }
+    
     var body: some Scene {
         WindowGroup {
             ContentView()
                 .task {
-                    Superwall.configure(apiKey: "YOUR_API_KEY")
                     setupTips()
                     await fetchProducts()
                 }

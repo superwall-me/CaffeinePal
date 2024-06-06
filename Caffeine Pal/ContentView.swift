@@ -6,9 +6,10 @@
 //
 
 import SwiftUI
-    
+import SuperwallKit
+
 struct ContentView: View {
-    
+        
     var body: some View {
         TabView {
             IntakeView()
