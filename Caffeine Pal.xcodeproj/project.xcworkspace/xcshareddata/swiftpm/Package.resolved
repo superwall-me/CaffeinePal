@@ -1,14 +1,15 @@
 {
+  "originHash" : "b551afb6becb63abb07916cc03ae7b94b3e2525be3e1c64b545f66a3bc3ff6ee",
   "pins" : [
     {
       "identity" : "superwall-ios",
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/superwall-me/Superwall-iOS",
       "state" : {
-        "revision" : "205c458dd92bbab2a1be73e0244a62efdd03c3e4",
-        "version" : "3.4.8"
+        "revision" : "99d89e2f097db3697d5141680d0b7ea77780c308",
+        "version" : "3.6.5"
       }
     }
   ],
-  "version" : 2
+  "version" : 3
 }
