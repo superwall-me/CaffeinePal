@@ -19,7 +19,7 @@ class PurchaseOperations {
     // Purchased Products
     private(set) var purchasedRecipes: [EspressoDrink] = []
     private(set) var purchasedSubs: [Product] = []
-    private(set) var hasCaffeinePalPro: Bool = false
+    private(set) var hasCaffeinePalPro: Bool = true
     
     // Listen for transactions
     var transactionListener: Task<Void, Error>? = nil

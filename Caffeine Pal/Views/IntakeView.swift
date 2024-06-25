@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import AppIntents
 
 struct IntakeView: View {
     @Environment(PurchaseOperations.self) private var storefront: PurchaseOperations
@@ -14,6 +15,8 @@ struct IntakeView: View {
     var body: some View {
         NavigationStack {
             ScrollView {
+                SiriTipView(intent: GetCaffeineIntent())
+                    .padding()
                 CaffeineGaugeView()
                     .padding(.bottom, 32)
                     .padding(.top)

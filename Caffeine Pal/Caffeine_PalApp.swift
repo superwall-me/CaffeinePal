@@ -13,6 +13,9 @@ struct Caffeine_PalApp: App {
     @State private var store: CaffeineStore = .init()
     @State private var purchases: PurchaseOperations = .init()
     
+    init() {
+        ShortcutsProvider.updateAppShortcutParameters()
+    }
     var body: some Scene {
         WindowGroup {
             ContentView()
