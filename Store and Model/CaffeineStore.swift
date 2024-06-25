@@ -10,6 +10,10 @@ import Observation
 
 @Observable
 class CaffeineStore {
+    static let shared = CaffeineStore()
+    
+    private init() {} 
+    
     enum FormattedAmount {
         case dailyIntake, amountOver
     }

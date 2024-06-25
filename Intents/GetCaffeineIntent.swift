@@ -13,7 +13,7 @@ struct GetCaffeineIntent: AppIntent {
     static var description = IntentDescription("Shows how much caffeine you've had today.")
     
     func perform() async throws -> some IntentResult & ReturnsValue<Double> & ProvidesDialog {
-        let store = CaffeineStore()
+        let store = CaffeineStore.shared
         let amount = store.amountIngested
         return .result(value: amount,
                        dialog: .init("You've had \(store.formattedAmount(for: .dailyIntake))."))

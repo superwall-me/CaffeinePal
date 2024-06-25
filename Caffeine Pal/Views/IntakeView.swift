@@ -148,5 +148,5 @@ struct QuickAddButton: View {
 #Preview {
     IntakeView()
         .environment(PurchaseOperations())
-        .environment(CaffeineStore())
+        .environment(CaffeineStore.shared)
 }

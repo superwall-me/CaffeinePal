@@ -10,7 +10,7 @@ import TipKit
 
 @main
 struct Caffeine_PalApp: App {
-    @State private var store: CaffeineStore = .init()
+    @State private var store: CaffeineStore = .shared
     @State private var purchases: PurchaseOperations = .init()
     
     init() {

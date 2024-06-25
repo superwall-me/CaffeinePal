@@ -29,6 +29,6 @@ struct ContentView: View {
 
 #Preview {
     ContentView()
-        .environment(CaffeineStore())
+        .environment(CaffeineStore.shared)
         .environment(PurchaseOperations())
 }
