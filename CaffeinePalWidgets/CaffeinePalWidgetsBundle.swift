@@ -11,6 +11,7 @@ import SwiftUI
 @main
 struct CaffeinePalWidgetsBundle: WidgetBundle {
     var body: some Widget {
+        EspressoWidget()
         CaffeinePalWidgetsControl()
     }
 }

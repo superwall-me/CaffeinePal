@@ -103,11 +103,11 @@ struct QuickLogView: View {
     
     var body: some View {
         GroupBox("Quick Log") {
-            QuickAddButton(text: "Single Shot", amountToLog: 64)
+            QuickAddButton(text: "Single Shot", shots: .single)
             Divider()
-            QuickAddButton(text: "Double Shot", amountToLog: 128)
+            QuickAddButton(text: "Double Shot", shots: .double)
             Divider()
-            QuickAddButton(text: "Triple Shot", amountToLog: 192)
+            QuickAddButton(text: "Triple Shot", shots: .triple)
             
         }
     }
@@ -119,22 +119,18 @@ struct QuickAddButton: View {
     @State private var showPaywall: Bool = false
     
     let text: String
-    let amountToLog: Double
+    let shots: EspressoShot
     
     var body: some View {
         HStack {
             Text(text)
                 .fontWeight(.medium)
             Spacer()
-            Button("Log") {
-                if storefront.hasCaffeinePalPro {
-                    store.log(amountToLog)
-                } else {
-                    showPaywall.toggle()
-                }
+            Button(intent: LogEspressoIntent(shots: shots)) {
+                Text("Log")
+                    .foregroundStyle(Color.inverseLabel)
+                    .fontWeight(.bold)
             }
-            .foregroundStyle(Color.inverseLabel)
-            .fontWeight(.bold)
             .buttonBorderShape(.capsule)
             .buttonStyle(.borderedProminent)
         }

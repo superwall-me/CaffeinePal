@@ -7,6 +7,32 @@
 
 import Foundation
 import Observation
+import AppIntents
+
+enum EspressoShot: Int, CaseIterable, CustomStringConvertible {
+    case single = 64, double = 128, triple = 192
+    
+    var description: String {
+        switch self {
+        case .single:
+            "Single"
+        case .double:
+            "Double"
+        case .triple:
+            "Triple"
+        }
+    }
+}
+
+extension EspressoShot: AppEnum {
+    static var typeDisplayRepresentation: TypeDisplayRepresentation = .init(name: "Shots")
+    static var typeDisplayName: LocalizedStringResource = "Shots"
+    static var caseDisplayRepresentations: [EspressoShot: DisplayRepresentation] = [
+        .single: "Single",
+        .double: "Double",
+        .triple: "Triple"
+    ]
+}
 
 @Observable
 class CaffeineStore {
@@ -52,6 +78,10 @@ class CaffeineStore {
     
     func log(_ amount: Double) {
         todaysCaffeine += amount
+    }
+    
+    func log(espressoShot: EspressoShot) {
+        todaysCaffeine += Double(espressoShot.rawValue)
     }
     
     func formattedAmount(for value: FormattedAmount = .dailyIntake) -> String {

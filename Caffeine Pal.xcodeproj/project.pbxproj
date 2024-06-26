@@ -29,6 +29,9 @@
 		33A4616C2C2B1C6700754051 /* CaffeineStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33440CBE2B60577B00D0FF9C /* CaffeineStore.swift */; };
 		33A4616D2C2B1C6B00754051 /* GetCaffeineIntent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33C267D32C2A0A8B00E54AF6 /* GetCaffeineIntent.swift */; };
 		33A4616F2C2B1E8C00754051 /* ShortcutsProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33A4616E2C2B1E8C00754051 /* ShortcutsProvider.swift */; };
+		33A461742C2B674C00754051 /* CaffeinePalEspressoWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33A461732C2B673F00754051 /* CaffeinePalEspressoWidget.swift */; };
+		33A461762C2B6B3D00754051 /* LogEspressoIntent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33A461752C2B6B3700754051 /* LogEspressoIntent.swift */; };
+		33A461772C2B6B3D00754051 /* LogEspressoIntent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33A461752C2B6B3700754051 /* LogEspressoIntent.swift */; };
 		33B40E892B61AA9F004DC075 /* PurchaseOperations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33B40E882B61AA9F004DC075 /* PurchaseOperations.swift */; };
 		33B40E8B2B62E4D6004DC075 /* ViewReceipeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33B40E8A2B62E4D6004DC075 /* ViewReceipeView.swift */; };
 		33B40E8D2B62EE87004DC075 /* PaywallView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33B40E8C2B62EE87004DC075 /* PaywallView.swift */; };
@@ -80,6 +83,8 @@
 		33A461612C2B1A6A00754051 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		33A461632C2B1A6A00754051 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		33A4616E2C2B1E8C00754051 /* ShortcutsProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShortcutsProvider.swift; sourceTree = "<group>"; };
+		33A461732C2B673F00754051 /* CaffeinePalEspressoWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaffeinePalEspressoWidget.swift; sourceTree = "<group>"; };
+		33A461752C2B6B3700754051 /* LogEspressoIntent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogEspressoIntent.swift; sourceTree = "<group>"; };
 		33B40E882B61AA9F004DC075 /* PurchaseOperations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PurchaseOperations.swift; sourceTree = "<group>"; };
 		33B40E8A2B62E4D6004DC075 /* ViewReceipeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewReceipeView.swift; sourceTree = "<group>"; };
 		33B40E8C2B62EE87004DC075 /* PaywallView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaywallView.swift; sourceTree = "<group>"; };
@@ -201,6 +206,7 @@
 		33A4615A2C2B1A6900754051 /* CaffeinePalWidgets */ = {
 			isa = PBXGroup;
 			children = (
+				33A461732C2B673F00754051 /* CaffeinePalEspressoWidget.swift */,
 				33A4615B2C2B1A6900754051 /* CaffeinePalWidgetsBundle.swift */,
 				33A4615D2C2B1A6900754051 /* CaffeinePalWidgetsControl.swift */,
 				33A461612C2B1A6A00754051 /* Assets.xcassets */,
@@ -212,6 +218,7 @@
 		33C267D22C2A0A8000E54AF6 /* Intents */ = {
 			isa = PBXGroup;
 			children = (
+				33A461752C2B6B3700754051 /* LogEspressoIntent.swift */,
 				33C267D32C2A0A8B00E54AF6 /* GetCaffeineIntent.swift */,
 			);
 			path = Intents;
@@ -323,6 +330,7 @@
 				33430C322C2A372E00535A7D /* GetCaffeineIntent.swift in Sources */,
 				33440CBB2B6055F500D0FF9C /* AppSettingsView.swift in Sources */,
 				33440CA52B604A4200D0FF9C /* ContentView.swift in Sources */,
+				33A461762C2B6B3D00754051 /* LogEspressoIntent.swift in Sources */,
 				33440CBF2B60577B00D0FF9C /* CaffeineStore.swift in Sources */,
 				33440CB92B6055ED00D0FF9C /* RecipesView.swift in Sources */,
 				33A4616F2C2B1E8C00754051 /* ShortcutsProvider.swift in Sources */,
@@ -339,9 +347,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				33A461742C2B674C00754051 /* CaffeinePalEspressoWidget.swift in Sources */,
 				33A4615E2C2B1A6900754051 /* CaffeinePalWidgetsControl.swift in Sources */,
 				33A4616D2C2B1C6B00754051 /* GetCaffeineIntent.swift in Sources */,
 				33A4615C2C2B1A6900754051 /* CaffeinePalWidgetsBundle.swift in Sources */,
+				33A461772C2B6B3D00754051 /* LogEspressoIntent.swift in Sources */,
 				33A4616C2C2B1C6700754051 /* CaffeineStore.swift in Sources */,
 				33A4616B2C2B1C6100754051 /* EspressoDrink.swift in Sources */,
 			);
