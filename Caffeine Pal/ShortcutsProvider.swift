@@ -24,7 +24,7 @@ struct ShortcutsProvider: AppShortcutsProvider {
         AppShortcut(intent: LogEspressoIntent(),
                     phrases: ["Log caffeine in \(.applicationName)",
                               "Log espresso shots in \(.applicationName)"],
-                    shortTitle: "Log Espresso",
-                    systemImageName: "bolt.circle")
+                    shortTitle: "Get Caffeine Intake",
+                    systemImageName: "cup.and.saucer.fill")
     }
 }

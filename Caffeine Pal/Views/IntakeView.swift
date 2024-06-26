@@ -116,7 +116,6 @@ struct QuickLogView: View {
 struct QuickAddButton: View {
     @Environment(PurchaseOperations.self) private var storefront: PurchaseOperations
     @Environment(CaffeineStore.self) private var store: CaffeineStore
-    @State private var showPaywall: Bool = false
     
     let text: String
     let shots: EspressoShot
@@ -135,9 +134,6 @@ struct QuickAddButton: View {
             .buttonStyle(.borderedProminent)
         }
         .padding(.vertical, 6)
-        .sheet(isPresented: $showPaywall) {
-            PaywallView()
-        }
     }
 }
 
